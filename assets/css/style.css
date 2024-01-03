@@ -1,5 +1,5 @@
 /* Google Fonts Import: 'Londrina Sketch' for headers and 'Kreon' for main body text */
-@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Londrina+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Londrina+Solid&display=swap');
 
 /* 
 Font family style rules for use in stylesheet:
@@ -26,10 +26,12 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
     text-transform: uppercase;
-    font-family: 'Londrina Sketch', sans-serif;
-    color: hsla(32, 50%, 50%, 1)
+    font-family: 'Londrina Solid', sans-serif;
+    color: hsla(32, 50%, 50%, 1);
+}
+
+#logo-title {
+    font-size: 4.5rem;
 }
