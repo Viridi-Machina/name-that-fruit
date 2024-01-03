@@ -1,0 +1,35 @@
+/* Google Fonts Import: 'Londrina Sketch' for headers and 'Kreon' for main body text */
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Londrina+Sketch&display=swap');
+
+/* 
+Font family style rules for use in stylesheet:
+font-family: 'Kreon', sans-serif;
+font-family: 'Londrina Sketch', sans-serif;
+*/
+
+/* Default browser style-override selector */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* General font styles */
+    font-family: 'Kreon', sans-serif;
+    /* Body default font colour */
+    color: hsla(90, 75%, 30%, 1)
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    font-family: 'Londrina Sketch', sans-serif;
+    color: hsla(32, 50%, 50%, 1)
+}
