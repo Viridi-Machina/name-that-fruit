@@ -1,39 +1,39 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Name That Fruit!
+!image here!
 
-Welcome,
+## Visit the repository [here](https://github.com/Viridi-Machina/name-that-fruit) or view the live site [here](https://viridi-machina.github.io/name-that-fruit/)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Summary
+*Name That Fruit!* is an interactive site, predominantly using javascript, that hosts a quiz on identifying different fruits from accross the globe. Users will be able to select 3 varying difficulties to either test their knowledge or learn about new fruits they didn't even know existed. Pictures of each fruit will visually aid each question and help the learning experience, while animations and feedback will be given at all times to improve engagement.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Author
+Jacen Green
 
-## Codeanywhere Reminders
+## Contents
+<details>
+ <summary>View Contents</summary>
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+ !Contents!
 
-`python3 -m http.server`
+</details>
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+### Target Audience
+*Name That Fruit!* is targeted at children and younger adults who either want a fun past-time or would like to learn more about the global food world through interactivity. 
 
-`http_server`
+### Project Goals
+This site presents a landing page with the main quiz, featuring a footer with external links to the author's socials through Linkedin and Github. The site is designed to be responsive on most screen sizes, and presents an interactive quiz that can be controlled using keyboard inputs which are explained on the site. Animations and feedback is given as necessary to imrprove user engagement. The key goal of the site is to test new knowledge learnt using javascript that can be implemented in future projects.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Stories
+### Child (age 5+)
+"As a young child learning to use technology for learning, I want a fun game that engages me, so that I can learn about the world"
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Child (age 10+)
+"As a young teenager with an interest in games and/or fruits, I want to have fun learning about the world, so that I can escape boredom and keep myself engaged"
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Parent
+"As a parent of children, I want an interactive puzzle game or learning experience for my children, so that I can keep that engaged and learn something at the same time"
 
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+### Author
+"As an aspiring developer, I want to practice my javascript knowledge, so that I can further enhance my skillset for future projects and expand my portfolio"
