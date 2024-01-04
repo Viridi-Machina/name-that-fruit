@@ -34,7 +34,7 @@ h2 {
 }
 
 header {
-    
+    position: fixed;
 }
 
 header h1 {
@@ -56,4 +56,95 @@ header i {
     z-index: -1;
     left: 115px;
     top: -100px;
+}
+
+main {
+    position: relative;
+    top: 230px;
+}
+
+.difficulty-level {
+    color: blanchedalmond;
+    font-weight: lighter;
+}
+
+#curved-arrow {
+    width: 90px;
+    height: 85px;
+    background: url(../images/difficulty-fruit/curved-arrow.png) center / cover no-repeat;
+    filter: invert(.4) hue-rotate(20deg);
+    position: fixed;
+    top: 215px;
+    left: 140px;
+    rotate: -30deg;
+    z-index: -10;
+}
+
+#difficulty-select {
+    position: fixed;
+    left: 60px;
+}
+
+#difficulty-select h2 {
+    font-size: 120%;
+    position: relative;
+    top: -80px;
+    left: 70px;
+}
+
+#easy-fruit {
+    width: 79px;
+    height: 85px;
+    background: url(../images/difficulty-fruit/apple.png) center / cover no-repeat;
+    /* Combination of filters is used to allow colour-change of black png. */
+    filter: invert(.55) sepia(.5) hue-rotate(60deg) saturate(300%) opacity(.7);
+}
+
+#easy-position {
+    position: fixed;
+    left: 60px;
+}
+
+#easy-position h2 {
+    position: relative;
+    top: -50px;
+    left: 15px;
+}
+
+#medium-fruit {
+    width: 130px;
+    height: 130px;
+    background: url(../images/difficulty-fruit/tomato.png) center / cover no-repeat;
+    filter: invert(.55) sepia(.5) hue-rotate(320deg) saturate(300%) opacity(.7);
+}
+
+#medium-position {
+    position: fixed;
+    left: 100px;
+    top: 310px;
+}
+
+#medium-position h2 {
+    position: relative;
+    top: -65px;
+    left: 30px;
+}
+
+#hard-fruit {
+    width: 150px;
+    height: 150px;
+    background: url(../images/difficulty-fruit/plum.png) center / cover no-repeat;
+    filter: invert(.55) sepia(.2) hue-rotate(220deg) saturate(300%) opacity(.7);
+}
+
+#hard-position {
+    position: fixed;
+    left: 60px;
+    top: 440px;
+}
+
+#hard-position h2 {
+    position: relative;
+    top: -70px;
+    left: 70px;
 }
