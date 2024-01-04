@@ -35,11 +35,14 @@ h2 {
 
 header {
     position: fixed;
+    /* Calculation based on the smallest mobile screensize, so that the content remains centered on larger screens */
+    left: calc(50vw - 140px);
 }
 
 header h1 {
     margin-top: 0px;
-    margin-left: 10px;    
+    margin-left: 10px;
+    margin-right: 71px;  
 }
 
 header a {
@@ -82,7 +85,8 @@ main {
 
 #difficulty-select {
     position: fixed;
-    left: 60px;
+    /* Calculation based on the smallest mobile screensize, so that the content remains centered on larger screens */
+    left: calc(50vw - 80px);
 }
 
 #difficulty-select h2 {
