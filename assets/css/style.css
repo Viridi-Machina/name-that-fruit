@@ -152,3 +152,56 @@ main {
     top: -70px;
     left: 70px;
 }
+
+/* Query for tablet screen sizes */
+@media screen and (min-width: 768px) {
+
+    #easy-fruit {
+        width: 144px;
+        height: 154px;
+    }
+    
+    #easy-position {
+        left: calc(50vw - 280px);
+        top: 280px;
+    }
+    
+    #easy-position h2 {
+        font-size: 300%;
+        top: -90px;
+        left: 28px;
+    }
+
+    #medium-fruit {
+        width: 200px;
+        height: 200px;
+        
+    }
+    
+    #medium-position {
+        left: calc(50vw - 100px);
+        top: 310px;
+    }
+    
+    #medium-position h2 {
+        font-size: 300%;
+        top: -100px;
+        left: 30px;
+    }
+
+    #hard-fruit {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #hard-position {
+        left: calc(50vw + 110px);
+        top: 280px;
+    }
+    
+    #hard-position h2 {
+        font-size: 300%;
+        top: -110px;
+        left: 80px;
+    }
+}
