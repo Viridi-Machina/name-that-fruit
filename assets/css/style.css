@@ -80,11 +80,9 @@ main {
     left: calc(50vw - 120px)
 }
 
-form h2 {
+#welcome-screen-button>h2 {
     font-size: 1.5rem;
     font-weight: lighter;
-    width: fit-content;
-    padding-right: 10px;
 }
 
 #entered-name {
@@ -122,6 +120,8 @@ form h2 {
     border: none;
     background: none;
     font-size: 1.5rem;
+    width: fit-content;
+    padding-right: 10px;
     padding-left: 10px;
     color: blanchedalmond;
     text-shadow: 0px 0px 8px hsla(33, 67%, 100%, 1);
@@ -243,6 +243,20 @@ form h2 {
         
     }
 
+    #welcome-screen-button>h2 {
+        font-size: 2.2rem;
+    }
+
+    #entered-name {
+        height: 40px;
+        max-width: 200px;
+        font-size: 1.4rem;
+    }
+
+    #welcome-screen-form {
+        left: calc(50vw - 200px)
+    }
+
     #easy-fruit {
         width: 144px;
         height: 154px;
@@ -299,4 +313,18 @@ form h2 {
     #computer-only {
         display: block;
     }
+
+    #arrow-keys-png {
+        position: relative;
+        top: -270px;
+        left: 460px;
+        width: 473px;
+        height: 335px;
+    }
+
+    #instructions-screen {
+        left: calc(50vw - 530px);
+    }
+
+
 }
