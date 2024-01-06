@@ -67,6 +67,10 @@ main {
     top: 230px;
 }
 
+#welcome-screen {
+    display: none;
+}
+
 #welcome-screen p {
     font-size: 0.9rem;
     max-width: 400px;
