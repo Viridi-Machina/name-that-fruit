@@ -239,8 +239,8 @@ main {
 }
 
 #quiz-display-card {
-    position: fixed;
-    top: 240px;
+    position: relative;
+    top: 10px;
     left: calc(50vw - 100px);
     width: 200px;
     height: 375px;
@@ -249,25 +249,33 @@ main {
 }
 
 #question-number {
-    position: relative;
-    left: calc(50vw - 110px);
-    top: 10px;
+    margin-left: 30px;
+    padding-top: 5px;
 }
 
 #picture-card {
-    position: relative;
     width: 170px;
     height: 170px;
-    left: calc(50vw - 125px);
-    top: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
     border-radius: 15px 30px 15px 30px;
     background: orange;
 }
 
 #question {
-    position: relative;
-    top: 20px;
-    left: calc(50vw - 100px);
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+#answer-grid {
+    display: grid;
+    gap: 10px;
+    width: 170px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 15px;
+    border: red 1px solid;
+    background-color: rgb(173, 153, 153);
 }
 
 /* Query for tablet screen sizes and above */
