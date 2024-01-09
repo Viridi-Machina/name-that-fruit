@@ -275,12 +275,11 @@ main {
     height: 70px;
     margin-top: 5px;
     margin-left: 15px;
-    border: red 1px solid;
 }
 
 .answer-box {
     text-align: center;
-    border: 1px solid red;
+    border: 2px solid hsla(33, 67%, 73%, 1);
     height: fit-content;
     padding: 3px;
     border-radius: 13px;
@@ -290,7 +289,6 @@ main {
     width: 130px;
     height: 30px;
     margin:  10px 0 0 35px;
-    border: 1px red solid;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -420,12 +418,12 @@ main {
     #current-score {
         width: 330px;
         height: 60px;
-        border: 1px red solid;
         font-size: 200%;
     }
     
     #reset-button {
-        left: 340px;
+        top: -35px;
+        left: 335px;
         width: 80px;
         height: 80px;
     }
