@@ -238,6 +238,10 @@ main {
     left: 70px;
 }
 
+#quiz-screen {
+    display: block;
+}
+
 #quiz-display-card {
     position: relative;
     top: 10px;
