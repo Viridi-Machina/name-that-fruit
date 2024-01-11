@@ -5,7 +5,7 @@ well as an object containing the fruit name and image filepath are contained her
 
 const quizArrayEasy = [
     {
-        pictureCard: ['assets/images/picture-cards/banana-peeled.jpg'],
+        pictureCard: ['assets/images/picture-cards/banana-peeled'],
         answers: ['Apple', 'Orange', 'Banana', 'Lemon', 3]
     },
     {
