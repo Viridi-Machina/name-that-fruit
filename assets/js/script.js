@@ -35,11 +35,19 @@ function difficultyScreenLoad(event){
     resetClicked();
 }
 
+/**
+ * When called this function displays the game screen.
+ */
+function gameScreenDisplay(){
+    startScreen.style.display = 'none';
+    difficultyScreen.style.display = 'none';
+    gameScreen.style.display = 'block';
+}
+
 // For loop to iterate through <div> objects for targetting
 for (var fruit of selectDifficulty){
     //console.log(fruit);
     var fruitHover = fruit.getElementsByTagName('h2');
-    console.log(fruitHover[0]);
     fruitHover[0].addEventListener('mouseover', hoverSelect);
     fruitHover[0].addEventListener('mouseout', hoverSelectOff);
     fruitHover[0].addEventListener('click', runGame);
@@ -57,12 +65,13 @@ function hoverSelectOff(){
     this.style.transition = '0.5s';
 }
 
-console.log(fruitHover[0].getElementsByTagName('h2'))
-
-
 function runGame(){
     this.style.textDecoration = 'underline';
+    console.log('loading game...');
+    setTimeout(gameScreenDisplay, 200);
+    console.log('loading complete.');
 }
+
 
 selectDifficulty[0].addEventListener('mouseover', hoverSelect);
 nameSubmit.addEventListener('submit', difficultyScreenLoad);
