@@ -205,7 +205,7 @@ function runGame(){
  */
 function endScreen(){
     imageDisplay.style.opacity = '0.1';
-    questionHeader.innerHTML = `<h2>Well done! You scored ${currentCorrect}/10<h2>`;
+    questionHeader.innerHTML = `<h2>Well done! <br>You scored ${currentCorrect}/10<h2>`;
     document.getElementById('question-number').style.position = 'fixed';
 }
 
