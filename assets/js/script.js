@@ -99,11 +99,7 @@ let totalWrong = Number(document.getElementById('wrong-answers').textContent);
 
 let questionHeader = document.getElementById('question-number');
 
-
-
-
 let questionNumber = 0;
-console.log(questionNumber);
 
 function nextLevel(){
     questionNumber = questionNumber + 1;
@@ -162,9 +158,9 @@ function runGame(){
         nextLevel(questionNumber);
         console.log(questionNumber);
 
-    } else if (questionNumber == 10) {
-            return setTimeout(endScreen(), 1000);
-    } else {        
+    //} else if (questionNumber == 10) {
+    //        return setTimeout(endScreen(), 1000);
+    //} else {        
         
         picture = quizArray[questionNumber].pictureCard[0];
         imageDisplay.style.background = `url(${picture}) center center / cover`;
@@ -185,8 +181,8 @@ function runGame(){
 
 function endScreen(){
     imageDisplay.style.opacity = '0.1';
-    questionHeader.innerHTML = `<h2>Well done! You scored ${currentCorrect}/10<h2>`
-    questionHeader.style.position = 'fixed';
+    /*questionHeader.innerHTML = `<h2>Well done! You scored ${currentCorrect}/10<h2>`
+    questionHeader.style.position = 'fixed';*/
 
 }
 
