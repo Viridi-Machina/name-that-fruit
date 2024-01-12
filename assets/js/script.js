@@ -80,6 +80,12 @@ hardH2.addEventListener('click', choiceSelect);
 
 var quizArray = '';
 
+/**
+ * This function creates a variable linked to the questions.js 
+ * script file for referrence in later functions. It effectively 
+ * stores the user's choice of difficulty before launching
+ * the first question.
+ */
 function choiceSelect(){
     let difficultySelect = this.textContent;
     console.log(`User Selected ${difficultySelect}`);
@@ -101,6 +107,9 @@ let questionHeader = document.getElementById('question-number');
 
 let questionNumber = 0;
 
+/**
+ * Increments the question-number variable by 1 each time it is called.
+*/
 function nextLevel(){
     questionNumber = questionNumber + 1;
 }
@@ -113,7 +122,10 @@ let answer3 = document.getElementsByClassName('answer-box')[2];
 let answer4 = document.getElementsByClassName('answer-box')[3];
 let imageDisplay = document.getElementById('picture-card');
 
-
+/**
+ * Loads the first question of the game based on the user's 
+ * choice of difficulty.
+ */
 function loadFirstQuestion(){
     setTimeout(gameScreenDisplay, 400);
 
@@ -135,6 +147,16 @@ function loadFirstQuestion(){
     answer3.addEventListener('click', runGame);
     answer4.addEventListener('click', runGame);
 
+/**
+ * The main game function - this iterates through each of the questions
+ * in the chosen array to advance after each answer is selected.
+ * I was unable to figure out how to add the total score at the end
+ * without continuing through the rest of the function.
+ * 
+ * The event listeners at the end of the function effectively loop the
+ * function after every answer that is clicked, before running the endScreen()
+ * function that displays a final score message.
+ */
 function runGame(){
     if (questionNumber < 9){
 
@@ -177,6 +199,10 @@ function runGame(){
     } 
 }
 
+/**
+ * This function displays a final message with total score that breaks
+ * out of the runGame() function.
+ */
 function endScreen(){
     imageDisplay.style.opacity = '0.1';
     questionHeader.innerHTML = `<h2>Well done! You scored ${currentCorrect}/10<h2>`;
@@ -193,6 +219,9 @@ function increaseWrong(){
     ++currentWrong;
 }
 
+/**
+ * This function resets scores back to 0 upon clicking the reset button.
+ */
 function resetScore(){
     currentCorrect = 0;
     currentWrong = 0;
