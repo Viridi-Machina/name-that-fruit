@@ -84,9 +84,12 @@ main {
     left: calc(50vw - 120px)
 }
 
-#welcome-screen-button>h2 {
+#welcome-screen-button {
     font-size: 1.5rem;
     font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'Londrina Solid', sans-serif;
+    color: hsla(25, 80%, 55%, 1);
 }
 
 #entered-name {
@@ -134,7 +137,7 @@ main {
 Subtle glow-pulse animation to indicate an interactable button that needs to be pressed to continue.
 Inspiration taken from "Net Ninja": https://www.youtube.com/watch?v=DCgcgXF0Fe0 for guidance with keyframes.
 */
-.glow-transition>h2 {
+.glow-transition {
     text-shadow: 0px 0px 8px hsla(33, 67%, 100%, 1);
     animation-name: pulse;
     animation-duration: 1.55s;
