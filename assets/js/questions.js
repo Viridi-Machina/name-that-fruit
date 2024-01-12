@@ -137,5 +137,9 @@ const quizArrayHard = [
     {
         pictureCard: ['../assets/images/picture-cards/langsat.jpg'],
         answers: ['Dragonfruit', 'Langsat', 'Lychee', 'Potato', 2]
+    },
+    {
+        pictureCard: ['../assets/images/picture-cards/langsat.jpg'],
+        answers: ['Dragonfruit', 'Langsat', 'Lychee', 'Potato', 2]
     }
 ];

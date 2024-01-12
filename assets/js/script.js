@@ -1,7 +1,6 @@
 console.log('javascript loading...')
 
 let nameSubmit = document.getElementById('welcome-form');
-
 let resetButton = document.getElementById('reset-button');
 
 // Variables for setting display of each screen of the game.
@@ -24,6 +23,7 @@ function resetClicked(){
     resetScore(currentCorrect, currentWrong);
     document.getElementById('correct-answers').textContent = 0;
     document.getElementById('wrong-answers').textContent = 0;
+    document.getElementById('question-number').style.position = 'static';
     imageDisplay.style.opacity = '1';
     console.log('loading complete.');
 }
@@ -136,7 +136,7 @@ function loadFirstQuestion(){
     answer4.addEventListener('click', runGame);
 
 function runGame(){
-    if (questionNumber <= 9){
+    if (questionNumber < 9){
 
         let givenAnswer = this.textContent;
         let i = quizArray[questionNumber].answers[4] - 1;
@@ -158,10 +158,6 @@ function runGame(){
         nextLevel(questionNumber);
         console.log(questionNumber);
 
-    //} else if (questionNumber == 10) {
-    //        return setTimeout(endScreen(), 1000);
-    //} else {        
-        
         picture = quizArray[questionNumber].pictureCard[0];
         imageDisplay.style.background = `url(${picture}) center center / cover`;
         
@@ -176,14 +172,15 @@ function runGame(){
         answer3.addEventListener('click', runGame);
         answer4.addEventListener('click', runGame);
         
+    } else if (questionNumber == 9) {
+          return setTimeout(endScreen(), 1000);
     } 
 }
 
 function endScreen(){
     imageDisplay.style.opacity = '0.1';
-    /*questionHeader.innerHTML = `<h2>Well done! You scored ${currentCorrect}/10<h2>`
-    questionHeader.style.position = 'fixed';*/
-
+    questionHeader.innerHTML = `<h2>Well done! You scored ${currentCorrect}/10<h2>`;
+    document.getElementById('question-number').style.position = 'fixed';
 }
 
 let currentCorrect = Number(document.getElementById('correct-answers').textContent)

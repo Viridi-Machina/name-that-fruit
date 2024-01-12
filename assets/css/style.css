@@ -299,8 +299,7 @@ Inspiration taken from "Net Ninja": https://www.youtube.com/watch?v=DCgcgXF0Fe0 
     gap: 10px;
     width: 170px;
     height: 70px;
-    margin-top: 5px;
-    margin-left: 15px;
+    margin: 5px 0 30px 15px;
 }
 
 .answer-box {
