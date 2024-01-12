@@ -127,7 +127,7 @@ main {
     width: fit-content;
     padding-right: 10px;
     padding-left: 10px;
-    color: blanchedalmond;
+    color: hsla(36, 100%, 90%, 1);
 }
 
 /* 
@@ -174,7 +174,7 @@ Inspiration taken from "Net Ninja": https://www.youtube.com/watch?v=DCgcgXF0Fe0 
 }
 
 .difficulty-level {
-    color: blanchedalmond;
+    color: hsla(36, 100%, 90%, 1);
     font-weight: lighter;
 }
 
@@ -271,7 +271,7 @@ Inspiration taken from "Net Ninja": https://www.youtube.com/watch?v=DCgcgXF0Fe0 
     width: 200px;
     height: 375px;
     border-radius: 30px 15px 30px 15px;
-    background-color: blanchedalmond;
+    background-color: hsla(36, 100%, 90%, 1);
 }
 
 #question-number {
@@ -285,7 +285,7 @@ Inspiration taken from "Net Ninja": https://www.youtube.com/watch?v=DCgcgXF0Fe0 
     margin-left: 15px;
     margin-top: 5px;
     border-radius: 15px 30px 15px 30px;
-    background: orange url(../images/picture-cards/banana-peeled.jpg) center center / cover;
+    background: hsla(39, 100%, 50%, 1) url(../images/picture-cards/banana-peeled.jpg) center center / cover;
 }
 
 #question {
@@ -321,7 +321,7 @@ Inspiration taken from "Net Ninja": https://www.youtube.com/watch?v=DCgcgXF0Fe0 
 
 #reset-button {
     border: 2px solid hsla(33, 67%, 73%, 1);
-    background-color: blanchedalmond;
+    background-color: hsla(36, 100%, 90%, 1);
     position: relative;
     left: 170px;
     width: 40px;
