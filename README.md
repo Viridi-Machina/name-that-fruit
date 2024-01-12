@@ -11,14 +11,6 @@
 ## Author
 Jacen Green
 
-## Contents
-<details>
- <summary>View Contents</summary>
-
- !Contents!
-
-</details>
-
 ## UX
 
 ### Target Audience
@@ -114,3 +106,79 @@ The site features the ability to select a username, before selecting a difficult
 Due to the scope of the project and the short window offered for this project after recently learning a new and tricky language, functionality of the keyboard using key-press events had to be ommited. Furthermore, there was a genuine struggle throughout the 2 weeks to understand the way the functions and their paramaters worked. Eventually it started to click however this was hours before the deadline while countless hours were spent troubleshooting and debugging functions. 
 With the large ammount of styling and bugs along the way not enough time was reserved to coomplete this.
 
+## Testing
+
+### HTML Validation
+
+<details>
+ <summary>View index.html validation</summary>
+ 
+![screencapture-validator-w3-org-nu-2024-01-12-11_33_18](https://github.com/Viridi-Machina/name-that-fruit/assets/146846939/9d6960be-04a9-437d-b6b9-7fa451685024)
+</details>
+
+### CSS Validation
+
+<details>
+ <summary>View style.css validation</summary>
+ 
+![screencapture-jigsaw-w3-org-css-validator-validator-2024-01-12-11_41_08](https://github.com/Viridi-Machina/name-that-fruit/assets/146846939/21224b57-bdeb-49d9-957c-6c7577ee5b5c)
+</details>
+
+## Core Web Vitals
+![image](https://github.com/Viridi-Machina/name-that-fruit/assets/146846939/b9ecc7ef-c212-4cd6-a9ef-0bc5321ea888)
+
+The above screenshot was taken from the lighthouse tool on chromedevtools where the deployed site was entered for testing. The scoring was as follow:
+- **Best Practices 100%**
+- **SEO 100%**
+- **Performance 99%**
+- **Accessability 90%** - This score is reduced because of apparent contrast issues however the score is still high. The colour contrast is a compromise that has been made to appeal to the younger generation.
+
+# Technologies Used
+
+## Languages
+- HTML5
+- CSS3
+- javascript
+
+# Deployment
+
+## Deploy to GitHub Pages
+
+**The tutorial below is taken from my previous project, however the process remains the same**
+
+1. To deploy a repository to GitHub Pages, first navigate to repository's main page.
+2. Navigate to the settings button in the top nav-bar.
+
+![image](https://github.com/Viridi-Machina/p1-my-portfolio/assets/146846939/716e6449-caf7-45c8-9148-53a41efeebf4)
+
+3. Under 'Code and automation' navigate to 'Pages' in the left-hand side-bar.
+
+![image](https://github.com/Viridi-Machina/p1-my-portfolio/assets/146846939/6496640f-4056-4b3c-b603-166a09c336ca)
+
+4. Ensure that the 'Source' is set to 'Deploy from a branch', 'main' branch is selected and /(root) folder is selected. Hit save.
+
+![image](https://github.com/Viridi-Machina/p1-my-portfolio/assets/146846939/184c61b2-8f92-43d1-a198-8e64447a6149)
+
+5. Navigate back to <> Code, and on the right-hand side of the screen there should be a new 'deployments' section.
+   Do note that this could take a few minutes for the repository to deploy.
+
+   ![image](https://github.com/Viridi-Machina/p1-my-portfolio/assets/146846939/d4e25b5b-29be-48dc-8887-73efeaf3bba1)
+
+7. Finally, cick on the 'Deployments' header and you can view your live site from any platform.
+
+Write out steps you would take and test them to deploy your code to GitHub Pages, include screenshots if you think they would make the process easier.
+
+## Forking The Repository
+
+![image](https://github.com/Viridi-Machina/p1-my-portfolio/assets/146846939/b6011d57-cc6f-4d54-8331-d2cc79ada78f)
+
+To fork a repository you must not be the owner of it already. If you are looking at someone else's repo you will be able to navigate to the fork button indicated in the image above.
+
+# Credits
+
+- [StackOverflow](https://stackoverflow.com/) - Multiple issues over many threads have been explained from the help given on this site. It has proven to be an exceptional resource for troubleshooting and trying new ways of coding.
+- [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) on youtube - Another content creator who walks-through and offers guides on many css and javascript topics of frustration, as well as general tips and tricks.
+- [MDN](https://developer.mozilla.org/en-US/) - This site has proven essential throughout the learning process so far regarding html and css standards.
+
+## Content
+Some content has been inspired from the Love Maths project to get started, otherwise the rest of the code is my own work which I have adapted from various tutorials online.
