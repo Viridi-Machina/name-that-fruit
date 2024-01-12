@@ -20,6 +20,11 @@ function resetClicked(){
     startScreen.style.display = 'none';
     difficultyScreen.style.display = 'block';
     gameScreen.style.display = 'none';
+    questionHeader.innerHTML = `<h2>Question: 1/10<h2>`;
+    resetScore(currentCorrect, currentWrong);
+    document.getElementById('correct-answers').textContent = 0;
+    document.getElementById('wrong-answers').textContent = 0;
+    imageDisplay.style.opacity = '1';
     console.log('loading complete.');
 }
 
@@ -111,6 +116,8 @@ let answer2 = document.getElementsByClassName('answer-box')[1];
 let answer3 = document.getElementsByClassName('answer-box')[2];
 let answer4 = document.getElementsByClassName('answer-box')[3];
 let imageDisplay = document.getElementById('picture-card');
+
+
 function loadFirstQuestion(){
     setTimeout(gameScreenDisplay, 400);
 
@@ -127,20 +134,23 @@ function loadFirstQuestion(){
     answer4.textContent = quizArray[questionNumber].answers[3];
 }
 
-    answer1.addEventListener('click', checkCorrect);
-    answer2.addEventListener('click', checkCorrect);
-    answer3.addEventListener('click', checkCorrect);
-    answer4.addEventListener('click', checkCorrect);
+    answer1.addEventListener('click', runGame);
+    answer2.addEventListener('click', runGame);
+    answer3.addEventListener('click', runGame);
+    answer4.addEventListener('click', runGame);
 
-function checkCorrect(){
-    if (questionNumber < 10){
+function runGame(){
+    if (questionNumber <= 9){
 
         let givenAnswer = this.textContent;
         let i = quizArray[questionNumber].answers[4] - 1;
         let correctAnswer = quizArray[questionNumber].answers[i];
 
-        questionHeader.innerHTML = `<h2>Question: ${questionNumber + 2}/10<h2>`
-
+        if (questionNumber < 9){
+            questionHeader.innerHTML = `<h2>Question: ${questionNumber + 2}/10<h2>`
+        } else {
+            questionHeader.innerHTML = `<h2>Question: 10/10<h2>`
+        }
         if (givenAnswer === correctAnswer){
             increaseScore(currentCorrect);
             document.getElementById('correct-answers').innerHTML = currentCorrect;
@@ -161,26 +171,35 @@ function checkCorrect(){
         answer4.textContent = quizArray[questionNumber].answers[3];
 
     
-        answer1.addEventListener('click', checkCorrect);
-        answer2.addEventListener('click', checkCorrect);
-        answer3.addEventListener('click', checkCorrect);
-        answer4.addEventListener('click', checkCorrect);
-    }   
+        answer1.addEventListener('click', runGame);
+        answer2.addEventListener('click', runGame);
+        answer3.addEventListener('click', runGame);
+        answer4.addEventListener('click', runGame);
 
-    endScreen();
+    } else if (questionNumber === 9) {
+        setTimeout(endScreen(), 1000);
+    } else {
+        
+    } 
 }
 
-
-
+function endScreen(){
+    imageDisplay.style.opacity = '0.1';
+}
 
 let currentCorrect = Number(document.getElementById('correct-answers').textContent)
 function increaseScore(){
     ++currentCorrect; 
 }
 
-let currentWrong = Number(document.getElementById('correct-answers').textContent)
+let currentWrong = Number(document.getElementById('wrong-answers').textContent)
 function increaseWrong(){
     ++currentWrong;
+}
+
+function resetScore(){
+    currentCorrect = 0;
+    currentWrong = 0;
 }
 
 console.log(totalCorrect + totalWrong);
