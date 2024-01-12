@@ -108,8 +108,7 @@ main {
 #enter-name-arrow {
     width: 25px;
     height: 21px;
-    rotate: 100deg;
-    transform: scaleX(-1);
+    transform: scaleX(1);
     filter: hue-rotate(150deg);
     top: 570px;
     left: calc(50vw - 42px);
@@ -189,7 +188,7 @@ Inspiration taken from "Net Ninja": https://www.youtube.com/watch?v=DCgcgXF0Fe0 
     position: fixed;
     top: 215px;
     left: calc(50vw - 20px);
-    rotate: -30deg;
+    transform: rotate(330deg);
     z-index: -10;
 }
 
