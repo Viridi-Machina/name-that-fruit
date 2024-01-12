@@ -285,7 +285,7 @@ Inspiration taken from "Net Ninja": https://www.youtube.com/watch?v=DCgcgXF0Fe0 
     margin-left: 15px;
     margin-top: 5px;
     border-radius: 15px 30px 15px 30px;
-    background: orange;
+    background: orange url(../images/picture-cards/banana-peeled.jpg) center center / cover;
 }
 
 #question {

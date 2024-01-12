@@ -5,43 +5,43 @@ well as an object containing the fruit name and image filepath are contained her
 
 const quizArrayEasy = [
     {
-        pictureCard: ['assets/images/picture-cards/banana-peeled'],
+        pictureCard: ['../assets/images/picture-cards/banana-peeled.jpg'],
         answers: ['Apple', 'Orange', 'Banana', 'Lemon', 3]
     },
     {
-        pictureCard: ['assets/images/picture-cards/apple.jpg'],
+        pictureCard: ['../assets/images/picture-cards/apple.jpg'],
         answers: ['Plumb', 'Banana', 'Orange', 'Apple', 4]
     },
     {
-        pictureCard: ['assets/images/picture-cards/orange.jpg'],
+        pictureCard: ['../assets/images/picture-cards/orange.jpg'],
         answers: ['Orange', 'Lime', 'Lemon', 'Grapefruit', 1]
     },
     {
-        pictureCard: ['assets/images/picture-cards/lemon.jpg'],
+        pictureCard: ['../assets/images/picture-cards/lemon.jpg'],
         answers: ['Lime', 'Lemon', 'Orange', 'Apple', 2]
     },
     {
-        pictureCard: ['assets/images/picture-cards/peach.jpg'],
+        pictureCard: ['../assets/images/picture-cards/peach.jpg'],
         answers: ['Plumb', 'Tomato', 'Orange', 'Peach', 4]
     },
     {
-        pictureCard: ['assets/images/picture-cards/lime.jpg'],
+        pictureCard: ['../assets/images/picture-cards/lime.jpg'],
         answers: ['Lime', 'Lemon', 'Grapefruit', 'Banana', 1]
     },
     {
-        pictureCard: ['assets/images/picture-cards/watermelon.jpg'],
+        pictureCard: ['../assets/images/picture-cards/watermelon.jpg'],
         answers: ['Grape', 'Lemon', 'Stripey Lime', 'Watermelon', 4]
     },
     {
-        pictureCard: ['assets/images/picture-cards/grape.jpg'],
+        pictureCard: ['../assets/images/picture-cards/grape.jpg'],
         answers: ['Melon', 'Grape', 'Plumb', 'Orange', 2]
     },
     {
-        pictureCard: ['assets/images/picture-cards/plumb.jpg'],
+        pictureCard: ['../assets/images/picture-cards/plumb.jpg'],
         answers: ['Apple', 'Tomato', 'Plumb', 'Peach', 3]
     },
     {
-        pictureCard: ['assets/images/picture-cards/grapefruit.jpg'],
+        pictureCard: ['../assets/images/picture-cards/grapefruit.jpg'],
         answers: ['Lemon', 'Grapefruit', 'Orange', 'Peach', 2]
     }
 ];

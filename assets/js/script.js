@@ -91,26 +91,35 @@ function choiceSelect(questionNumber){
 
 //console.log(document.getElementById('question-number').textContent);
 var questionNumber = 0;
+var picture = quizArrayEasy[questionNumber].pictureCard[0];
+var answer1 = document.getElementsByClassName('answer-box')[0];
+var answer2 = document.getElementsByClassName('answer-box')[1];
+var answer3 = document.getElementsByClassName('answer-box')[2];
+var answer4 = document.getElementsByClassName('answer-box')[3];
 
 function loadGameQuestion(questionNumber){
     console.log('loading game...');
-    var questionNumber = 0;
-    
-    console.log(quizArrayEasy[0]);
+    setTimeout(gameScreenDisplay, 400);
+
+    questionNumber = 0;
+
+    picture = quizArray[questionNumber].pictureCard[0];
     console.log(picture);
-    
-    console.log(quizArrayEasy[questionNumber].answers);
+    let imageDisplay = document.getElementById('picture-card');
+    console.log(imageDisplay);
+    imageDisplay.style.background = `url(${picture}) center center / cover`;
 
-
+    answer1.textContent = quizArray[questionNumber].answers[0];
+    answer2.textContent = quizArray[questionNumber].answers[1];
+    answer3.textContent = quizArray[questionNumber].answers[2];
+    answer4.textContent = quizArray[questionNumber].answers[3];
 
     console.log('loading complete.');
 
-
-    
+    answer1.addEventListener('click', checkCorrect);
 }
-//console.log(quizArrayEasy[questionNumber].answers);
-picture = quizArrayEasy[questionNumber].pictureCard[0];
-console.log(picture);
+
+
 
 selectDifficulty[0].addEventListener('mouseover', hoverSelect);
 nameSubmit.addEventListener('submit', difficultyScreenLoad);
