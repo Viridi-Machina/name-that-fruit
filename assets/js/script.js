@@ -75,51 +75,115 @@ hardH2.addEventListener('click', choiceSelect);
 
 var quizArray = '';
 
-function choiceSelect(questionNumber){
+function choiceSelect(){
     let difficultySelect = this.textContent;
     console.log(`User Selected ${difficultySelect}`);
     if (difficultySelect === 'Easy'){
-        quizArray = quizArrayEasy
+        quizArray = quizArrayEasy;
     } else if (difficultySelect === 'Medium'){
-        quizArray = quizArrayMedium
+        quizArray = quizArrayMedium;
     } else if (difficultySelect === 'Hard'){
-        quizArray = quizArrayHard
+        quizArray = quizArrayHard;
     }
 
-    return loadGameQuestion(questionNumber);
+    loadFirstQuestion(questionNumber);
 }
 
-//console.log(document.getElementById('question-number').textContent);
-var questionNumber = 0;
-var picture = quizArrayEasy[questionNumber].pictureCard[0];
-var answer1 = document.getElementsByClassName('answer-box')[0];
-var answer2 = document.getElementsByClassName('answer-box')[1];
-var answer3 = document.getElementsByClassName('answer-box')[2];
-var answer4 = document.getElementsByClassName('answer-box')[3];
+let totalCorrect = Number(document.getElementById('correct-answers').textContent);
+let totalWrong = Number(document.getElementById('wrong-answers').textContent);
 
-function loadGameQuestion(questionNumber){
-    console.log('loading game...');
+let questionHeader = document.getElementById('question-number');
+
+
+
+
+let questionNumber = 0;
+console.log(questionNumber);
+
+function nextLevel(){
+    questionNumber = questionNumber + 1;
+}
+
+
+let picture = '';
+let answer1 = document.getElementsByClassName('answer-box')[0];
+let answer2 = document.getElementsByClassName('answer-box')[1];
+let answer3 = document.getElementsByClassName('answer-box')[2];
+let answer4 = document.getElementsByClassName('answer-box')[3];
+let imageDisplay = document.getElementById('picture-card');
+function loadFirstQuestion(){
     setTimeout(gameScreenDisplay, 400);
 
     questionNumber = 0;
 
-    picture = quizArray[questionNumber].pictureCard[0];
-    console.log(picture);
     let imageDisplay = document.getElementById('picture-card');
-    console.log(imageDisplay);
+
+    picture = quizArray[questionNumber].pictureCard[0];
     imageDisplay.style.background = `url(${picture}) center center / cover`;
 
     answer1.textContent = quizArray[questionNumber].answers[0];
     answer2.textContent = quizArray[questionNumber].answers[1];
     answer3.textContent = quizArray[questionNumber].answers[2];
     answer4.textContent = quizArray[questionNumber].answers[3];
-
-    console.log('loading complete.');
+}
 
     answer1.addEventListener('click', checkCorrect);
+    answer2.addEventListener('click', checkCorrect);
+    answer3.addEventListener('click', checkCorrect);
+    answer4.addEventListener('click', checkCorrect);
+
+function checkCorrect(){
+    if (questionNumber < 10){
+
+        let givenAnswer = this.textContent;
+        let i = quizArray[questionNumber].answers[4] - 1;
+        let correctAnswer = quizArray[questionNumber].answers[i];
+
+        questionHeader.innerHTML = `<h2>Question: ${questionNumber + 2}/10<h2>`
+
+        if (givenAnswer === correctAnswer){
+            increaseScore(currentCorrect);
+            document.getElementById('correct-answers').innerHTML = currentCorrect;
+        } else {
+            increaseWrong(currentWrong);
+            document.getElementById('wrong-answers').innerHTML = currentWrong;
+        }
+
+        nextLevel(questionNumber);
+        console.log(questionNumber);
+
+        picture = quizArray[questionNumber].pictureCard[0];
+        imageDisplay.style.background = `url(${picture}) center center / cover`;
+        
+        answer1.textContent = quizArray[questionNumber].answers[0];
+        answer2.textContent = quizArray[questionNumber].answers[1];
+        answer3.textContent = quizArray[questionNumber].answers[2];
+        answer4.textContent = quizArray[questionNumber].answers[3];
+
+    
+        answer1.addEventListener('click', checkCorrect);
+        answer2.addEventListener('click', checkCorrect);
+        answer3.addEventListener('click', checkCorrect);
+        answer4.addEventListener('click', checkCorrect);
+    }   
+
+    endScreen();
 }
 
 
+
+
+let currentCorrect = Number(document.getElementById('correct-answers').textContent)
+function increaseScore(){
+    ++currentCorrect; 
+}
+
+let currentWrong = Number(document.getElementById('correct-answers').textContent)
+function increaseWrong(){
+    ++currentWrong;
+}
+
+console.log(totalCorrect + totalWrong);
 
 selectDifficulty[0].addEventListener('mouseover', hoverSelect);
 nameSubmit.addEventListener('submit', difficultyScreenLoad);

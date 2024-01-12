@@ -29,7 +29,7 @@ const quizArrayEasy = [
         answers: ['Lime', 'Lemon', 'Grapefruit', 'Banana', 1]
     },
     {
-        pictureCard: ['../assets/images/picture-cards/watermelon.jpg'],
+        pictureCard: ['../assets/images/picture-cards/watermelon.jpeg'],
         answers: ['Grape', 'Lemon', 'Stripey Lime', 'Watermelon', 4]
     },
     {
