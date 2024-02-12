@@ -1,5 +1,3 @@
-console.log('javascript loading...')
-
 let nameSubmit = document.getElementById('welcome-form');
 let resetButton = document.getElementById('reset-button');
 
@@ -15,7 +13,6 @@ let selectDifficulty = document.getElementsByClassName('fruit');
  * This is also called after entering a username.
  */
 function resetClicked(){
-    console.log('loading difficulty screen...');
     startScreen.style.display = 'none';
     difficultyScreen.style.display = 'block';
     gameScreen.style.display = 'none';
@@ -25,7 +22,6 @@ function resetClicked(){
     document.getElementById('wrong-answers').textContent = 0;
     document.getElementById('question-number').style.position = 'static';
     imageDisplay.style.opacity = '1';
-    console.log('loading complete.');
 }
 
 /**
@@ -35,7 +31,6 @@ function resetClicked(){
 function difficultyScreenLoad(event){
     event.preventDefault();
     var user = document.getElementById('entered-name').value;
-    console.log(`User chose to be called ${user}`);
     window.localStorage.setItem('userName', user)
     alert(`Welcome to the game ${user}`)
     resetClicked();
@@ -52,7 +47,6 @@ function gameScreenDisplay(){
 
 // For loop to iterate through <div> objects for targetting
 for (var fruit of selectDifficulty){
-    //console.log(fruit);
     var fruitHover = fruit.getElementsByTagName('h2');
     fruitHover[0].addEventListener('mouseover', hoverSelect);
     fruitHover[0].addEventListener('mouseout', hoverSelectOff);
@@ -88,7 +82,6 @@ var quizArray = '';
  */
 function choiceSelect(){
     let difficultySelect = this.textContent;
-    console.log(`User Selected ${difficultySelect}`);
     if (difficultySelect === 'Easy'){
         quizArray = quizArrayEasy;
     } else if (difficultySelect === 'Medium'){
@@ -178,8 +171,6 @@ function runGame(){
         }
 
         nextLevel(questionNumber);
-        console.log(questionNumber);
-
         picture = quizArray[questionNumber].pictureCard[0];
         imageDisplay.style.background = `url(${picture}) center center / cover`;
         
@@ -230,5 +221,3 @@ function resetScore(){
 selectDifficulty[0].addEventListener('mouseover', hoverSelect);
 nameSubmit.addEventListener('submit', difficultyScreenLoad);
 resetButton.addEventListener('click', resetClicked);
-
-console.log('javascript load complete');
