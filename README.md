@@ -1,5 +1,5 @@
 # Name That Fruit!
-![image](https://github.com/Viridi-Machina/name-that-fruit/assets/146846939/16a48a4f-17fb-4ab2-bf05-64cd6c7312a8)
+![image](https://github.com/Viridi-Machina/name-that-fruit/assets/146846939/33678cf3-b972-49e8-9a0a-e9e9f4f2b00d)
 
 ![image](https://github.com/Viridi-Machina/name-that-fruit/assets/146846939/8cf5f6fc-45b3-4356-9251-b8e07c029ac7)
 
@@ -67,7 +67,7 @@ The above images shows the main header styling used in the site. This main heade
 ![image](https://github.com/Viridi-Machina/name-that-fruit/assets/146846939/3682963a-b05e-4829-803b-fdba29a8b45a)
 </details>
 
-The above images shows the main game in action, displaying the picture relevant to each question as well as a score and question counter to keep track. For whatever reason (I could not figure out why and ran out of time) the relative filepaths used and variations of them would not show on the deployed site - thus you will have to see them via images in this README. The filepaths used are consistent with the last project and locally it loads perfectly.
+The above screenshot shows the main game in action, displaying the picture relevant to each question as well as a score and question counter to keep track.
 
 ### Animations and Transitions
 The default screen has a submit button with 'pulse-glow' effect which has been added to indicate what is interactable as the form elements have been heavily stylised to improve engagement. See video below: 
@@ -104,7 +104,6 @@ The site features the ability to select a username, before selecting a difficult
 
 ### Features not present
 Due to the scope of the project and the short window offered for this project after recently learning a new and tricky language, functionality of the keyboard using key-press events had to be ommited. Furthermore, there was a genuine struggle throughout the 2 weeks to understand the way the functions and their paramaters worked. Eventually it started to click however this was hours before the deadline while countless hours were spent troubleshooting and debugging functions. 
-With the large ammount of styling and bugs along the way not enough time was reserved to coomplete this.
 
 ## Testing
 
@@ -166,8 +165,6 @@ The above screenshot was taken from the lighthouse tool on chromedevtools where 
 
 7. Finally, cick on the 'Deployments' header and you can view your live site from any platform.
 
-Write out steps you would take and test them to deploy your code to GitHub Pages, include screenshots if you think they would make the process easier.
-
 ## Forking The Repository
 
 ![image](https://github.com/Viridi-Machina/p1-my-portfolio/assets/146846939/b6011d57-cc6f-4d54-8331-d2cc79ada78f)
@@ -179,6 +176,32 @@ To fork a repository you must not be the owner of it already. If you are looking
 - [StackOverflow](https://stackoverflow.com/) - Multiple issues over many threads have been explained from the help given on this site. It has proven to be an exceptional resource for troubleshooting and trying new ways of coding.
 - [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) on youtube - Another content creator who walks-through and offers guides on many css and javascript topics of frustration, as well as general tips and tricks.
 - [MDN](https://developer.mozilla.org/en-US/) - This site has proven essential throughout the learning process so far regarding html and css standards.
+
+## Image Credits:
+
+- Banana, Lime, Grape, Grapefruit, Pear: iStock by Getty Images
+- Apple: Shutterstock
+- Orange: www.plantgrower.org
+- Lemon: Adobe Stock Photos
+- Peach: www.gardeningknowhow.com (credit to Roman Samokhin)
+- Watermelon: www.thefruitbasketshop.co.uk
+- Plumb: www.PNGimg.com
+- Passionfruit: www.projuice.co.uk
+- Papaya: www.broxbournemarket.com
+- Mango: www.getfreshswansea.co.uk
+- Lychee: www.etsy.com
+- Tomato: www.themilefarmshop.co.uk
+- Pomegranite: delishdeliveries.com.au
+- Dragonfruit, Persimmon: exoticfruits.co.uk
+- Acai: www.simplysupplements.co.uk
+- Pineapple: countrybaskets.co.uk
+- Guava: draxe.com
+- Mangosteen: shop.tropicalbox.co.uk
+- Kiwi: hellocosta.com
+- Rambutan: fruitplug.co.uk
+- Starfruit: homefreshinverclyde.co.uk
+- Tamarillo: ecofields.co.ke
+- Langsat: imgur.com
 
 ## Content
 Some content has been inspired from the Love Maths project to get started, otherwise the rest of the code is my own work which I have adapted from various tutorials online.
