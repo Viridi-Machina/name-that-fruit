@@ -123,6 +123,18 @@ Due to the scope of the project and the short window offered for this project af
 ![screencapture-jigsaw-w3-org-css-validator-validator-2024-01-12-11_41_08](https://github.com/Viridi-Machina/name-that-fruit/assets/146846939/21224b57-bdeb-49d9-957c-6c7577ee5b5c)
 </details>
 
+### Js Validation
+
+<details>
+ <summary>View .js validations</summary>
+ 
+![image](https://github.com/Viridi-Machina/name-that-fruit/assets/146846939/69675fa0-f6ca-4b8a-aa16-714997630643)
+script.js file - 3 undefined variables are defined in the questions.js file.
+
+![image](https://github.com/Viridi-Machina/name-that-fruit/assets/146846939/22221037-e083-4032-b2c8-65019022d1b4)
+questions.js file - 3 unused variables are used in the script.js file.
+</details>
+
 ## Core Web Vitals
 ![image](https://github.com/Viridi-Machina/name-that-fruit/assets/146846939/b9ecc7ef-c212-4cd6-a9ef-0bc5321ea888)
 
