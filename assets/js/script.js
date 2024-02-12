@@ -151,7 +151,7 @@ function loadFirstQuestion(){
  * function that displays a final score message.
  */
 function runGame(){
-    if (questionNumber < 9){
+    if (questionNumber <= 9){
 
         let givenAnswer = this.textContent;
         let i = quizArray[questionNumber].answers[4] - 1;
@@ -159,9 +159,7 @@ function runGame(){
 
         if (questionNumber < 9){
             questionHeader.innerHTML = `<h2>Question: ${questionNumber + 2}/10<h2>`
-        } else {
-            questionHeader.innerHTML = `<h2>Question: 10/10<h2>`
-        }
+        } 
         if (givenAnswer === correctAnswer){
             increaseScore(currentCorrect);
             document.getElementById('correct-answers').innerHTML = currentCorrect;
@@ -185,8 +183,9 @@ function runGame(){
         answer3.addEventListener('click', runGame);
         answer4.addEventListener('click', runGame);
         
-    } else if (questionNumber == 9) {
-          return setTimeout(endScreen(), 1000);
+        if (questionNumber == 10) {
+            return setTimeout(endScreen(), 1000);
+        } 
     } 
 }
 
