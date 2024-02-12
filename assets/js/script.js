@@ -31,8 +31,8 @@ function resetClicked(){
 function difficultyScreenLoad(event){
     event.preventDefault();
     var user = document.getElementById('entered-name').value;
-    window.localStorage.setItem('userName', user)
-    alert(`Welcome to the game ${user}`)
+    window.localStorage.setItem('userName', user);
+    alert(`Welcome to the game ${user}`);
     resetClicked();
 }
 
@@ -55,13 +55,11 @@ for (var fruit of selectDifficulty){
 
 // The following two functions add a subtle hover transition effect.
 function hoverSelect(){
-    this.style.textShadow 
-    = '0px 0px 8px hsla(33, 67%, 80%, 1)';
+    this.style.textShadow = '0px 0px 8px hsla(33, 67%, 80%, 1)';
     this.style.transition = '0s';
 }
 function hoverSelectOff(){
-    this.style.textShadow 
-    = 'none';
+    this.style.textShadow = 'none';
     this.style.transition = '0.5s';
 }
 
@@ -92,9 +90,6 @@ function choiceSelect(){
 
     loadFirstQuestion(questionNumber);
 }
-
-let totalCorrect = Number(document.getElementById('correct-answers').textContent);
-let totalWrong = Number(document.getElementById('wrong-answers').textContent);
 
 let questionHeader = document.getElementById('question-number');
 
@@ -160,7 +155,7 @@ function runGame(){
         let correctAnswer = quizArray[questionNumber].answers[i];
 
         if (questionNumber < 9){
-            questionHeader.innerHTML = `<h2>Question: ${questionNumber + 2}/10<h2>`
+            questionHeader.innerHTML = `<h2>Question: ${questionNumber + 2}/10<h2>`;
         } 
         if (givenAnswer === correctAnswer){
             increaseScore(currentCorrect);
@@ -203,12 +198,12 @@ function endScreen(){
     document.getElementById('answer-grid').style.display="none";
 }
 
-let currentCorrect = Number(document.getElementById('correct-answers').textContent)
+let currentCorrect = Number(document.getElementById('correct-answers').textContent);
 function increaseScore(){
     ++currentCorrect; 
 }
 
-let currentWrong = Number(document.getElementById('wrong-answers').textContent)
+let currentWrong = Number(document.getElementById('wrong-answers').textContent);
 function increaseWrong(){
     ++currentWrong;
 }
