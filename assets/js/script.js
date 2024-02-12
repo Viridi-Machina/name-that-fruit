@@ -121,7 +121,9 @@ let imageDisplay = document.getElementById('picture-card');
  */
 function loadFirstQuestion(){
     setTimeout(gameScreenDisplay, 400);
-
+    document.getElementById('question').style.display="block";
+    document.getElementById('answer-grid').style.display="grid";
+    
     questionNumber = 0;
 
     let imageDisplay = document.getElementById('picture-card');
@@ -197,6 +199,8 @@ function endScreen(){
     imageDisplay.style.opacity = '0.1';
     questionHeader.innerHTML = `<h2>Well done! <br>You scored ${currentCorrect}/10<h2>`;
     document.getElementById('question-number').style.position = 'fixed';
+    document.getElementById('question').style.display="none";
+    document.getElementById('answer-grid').style.display="none";
 }
 
 let currentCorrect = Number(document.getElementById('correct-answers').textContent)
